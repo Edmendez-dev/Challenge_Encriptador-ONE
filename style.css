@@ -1,0 +1,497 @@
+* {
+    background-color: #D8DFE8;
+    font-family: 'Inter';
+}
+
+.logo {
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 5px;
+    width: 120px;
+    height: 48px;
+}
+header {
+    position: absolute;
+}
+
+main {
+    display: flex;
+}
+
+.input-text {
+    font-weight: 400px;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+    color: #0A3871;
+    text-transform: lowercase;
+    margin-left: 240px;
+    margin-top: 168px;
+    /* margin-right: 183px; */
+    margin-bottom: 190px;
+    resize: none;
+}
+.input-text::placeholder {
+    color: #0A3871;
+}
+.input-text:focus {
+    outline: none;
+}
+
+.information {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 240px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+.information svg {
+    margin-right: 5px;
+}
+
+.buttons {
+    display: flex;
+    margin-left: 240px;
+    margin-bottom: 72px;
+}
+.btn-encrypted {
+    width: 328px;
+    height: 67px;
+    margin-right: 24px;
+    background-color: #0A3871;
+    border-color: #0A3871;
+    border-radius: 24px;
+    color: white;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 24px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+.btn-decrypted {
+    width: 328px;
+    height: 67px;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 24px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.output-text {
+    background-color: #FFFFFF;
+    background-image: url("img/image_failed.png");
+    background-repeat: no-repeat;
+    background-size: 82%;
+    background-position-x: 40px;
+    background-position-y: 243px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    border: none;
+    width: 336px;
+    height: 880px;
+    right: 1000px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 60px;
+    resize: none;
+
+    /* Text Style */
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    padding: 32px;
+}
+.output-text:focus {
+    outline: none;
+}
+
+.text-failed {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 336px;
+    height: 122px;
+    top: 625px;
+    left: 980px;
+    right: 72px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.paragraph_1, .paragraph_2 {background-color: #FFFFFF;padding-left: 10px;padding-right: 10px;}
+
+.paragraph_1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    background-color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.paragraph_2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+#button-copy {display: none;}
+
+.btn-copy {
+    width: 328px;
+    height: 67px;
+    position: absolute;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 24px;
+    color: #0A3871;
+    background-color: #FFFFFF;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+    left: 982px;
+    top: 885px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+/* Diseño Responsivo para Laptop (1280x800) */
+@media screen and (max-width: 1280px) {
+    .logo {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .input-text {
+        margin-top: 125px;
+        margin-left: 190px;
+        margin-bottom: 12px;
+    }
+    .buttons, .information {
+        margin-left: 190px;
+    }
+    .buttons {
+        margin-bottom: 40px;
+    }
+    .btn-encrypted, .btn-decrypted {
+        width: 300px;
+    }
+
+    .text-failed {
+        width: 300px;
+        top: 430px;
+        left: 875px;
+    }
+
+    .output-text {
+        background-position-x: 40px;
+        background-position-y: 130px;
+        width: 300px;
+        height: 656px;
+        margin-bottom: 35px;
+    }
+
+    .btn-copy {
+        width: 300px;
+        left: 875px;
+    }
+    
+}
+
+/* Diseño Responsivo para Tablet (768x1024) */
+@media screen and (max-width: 768px){
+    main {
+        display: block;
+    }
+
+    .logo {
+        margin-top: 73.42px;
+        margin-left: 0;
+    }
+
+    .input-text {
+        margin-left: 40px;
+        margin-bottom: 20px;
+        margin-top: 230px;
+        width: 688px;
+        height: 460px;
+    }
+    
+    .text-failed {
+        position: absolute;
+        margin: 0;
+        top: 900px;
+        left: 72px;
+        bottom: 72px;
+        width: 624px;
+        height: 69px;
+    }
+    .paragraph_1, .paragraph_2 {padding: 0;}
+
+    .buttons, .information {
+        margin-left: 40px;
+    }
+    .buttons{
+        margin-bottom: 44px;
+    }
+    .btn-encrypted, .btn-decrypted {
+        width: 332px;
+    }
+
+    .output-text {
+        margin-top: 0;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        width: 624px;
+        height: 68px;
+        background-image: none;
+    }
+
+    .btn-copy {
+        left: 40px; 
+        width: 624px;
+    }
+}
+
+/* Diseño Responsivo para Phone (425x1031) */
+@media screen and (max-width: 425px) {
+    .logo {
+        margin-top: 24px;
+        padding: 0;
+    }
+
+    .input-text {
+        width: 380px;
+        height: 247px;
+        margin-top: 152px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+
+    .information, .buttons {
+        margin-left: 20px;
+    }
+
+    .buttons {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .btn-encrypted, .btn-decrypted {
+        width: 385px;
+    }
+    .btn-encrypted {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .text-failed {
+        width: 315px;
+        height: 122px;
+        left: 56px;
+        top: 646px;
+    }
+    .paragraph_2 {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+
+    .output-text {
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 35px;
+        width: 315px;
+    }
+
+    .btn-copy {
+        width: 315px;
+        left: 25px;
+    }
+}
+
+/* Diseño Responsivo para Phone (390x844) */
+@media screen and (max-width: 390px) {
+    .logo {
+        margin-top: 24px;
+        padding: 0;
+    }
+
+    .input-text {
+        width: 355px;
+        height: 247px;
+        margin-top: 152px;
+        margin-left: 16px;
+        margin-bottom: 10px;
+        margin-right: 16px;
+    }
+
+    .information, .buttons {
+        margin-left: 16px;
+    }
+
+    .buttons {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .btn-encrypted, .btn-decrypted {
+        width: 356px;
+    }
+    .btn-encrypted {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .text-failed {
+        width: 280px;
+        height: 122px;
+        left: 56px;
+        top: 646px;
+    }
+    .paragraph_2 {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+
+    .output-text {
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 35px;
+        width: 280px;
+    }
+
+    .btn-copy {
+        width: 280px;
+        left: 23px;
+    }
+}
+
+/* Diseño Responsivo para Phone (375x812) */
+@media screen and (max-width: 375px) {
+    .logo {
+        margin-top: 24px;
+        padding: 0;
+    }
+
+    .input-text {
+        width: 343px;
+        height: 247px;
+        margin-top: 152px;
+        margin-left: 16px;
+        margin-bottom: 10px;
+        margin-right: 16px;
+    }
+
+    .information, .buttons {
+        margin-left: 16px;
+    }
+
+    .buttons {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .btn-encrypted, .btn-decrypted {
+        width: 332px;
+    }
+    .btn-encrypted {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .text-failed {
+        width: 263px;
+        height: 122px;
+        left: 56px;
+        top: 646px;
+    }
+    .paragraph_2 {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+
+    .output-text {
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 35px;
+        width: 263px;
+    }
+
+    .btn-copy {
+        width: 279px;
+        left: 16px;
+    }
+}
+
+/* Diseño Responsivo para Phone 320 */
+@media screen and (max-width: 320px) {
+    .logo {
+        margin-top: 24px;
+        padding: 0;
+    }
+
+    .input-text {
+        width: 290px;
+        height: 247px;
+        margin-top: 152px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 16px;
+    }
+
+    .information, .buttons {
+        margin-left: 10px;
+    }
+
+    .buttons {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .btn-encrypted, .btn-decrypted {
+        width: 300px;
+    }
+    .btn-encrypted {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .text-failed {
+        width: 226px;
+        height: 122px;
+        left: 50px;
+        top: 646px;
+    }
+    .paragraph_2 {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+
+    .output-text {
+        margin-left: 14px;
+        margin-right: 14px;
+        margin-bottom: 35px;
+        width: 226px;
+    }
+
+    .btn-copy {
+        width: 226px;
+        left: 14px;
+    }
+}
